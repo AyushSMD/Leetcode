@@ -7,11 +7,8 @@ class Solution:
                 if char == bracket:
                     latest_bracket.append(hashmap[bracket][1])
                 elif char == hashmap[bracket][0]:
-                    try:
-                        if hashmap[bracket][1] != latest_bracket.pop():
-                            return False
-                    except:
-                        return False
+                    if hashmap[bracket][1] != latest_bracket.pop():
+
                     
         if latest_bracket:
             return False
