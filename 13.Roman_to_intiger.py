@@ -17,4 +17,4 @@ class Solution:
         return number
 
 Solution = Solution()
-print(Solution.romanToInt("MCMXCIV"))
+print(Solution.romanToInt("I"))
