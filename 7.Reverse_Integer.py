@@ -5,12 +5,9 @@ class Solution:
             x = x*-1
             s = -1
         
-        x = list(str(x))
+        x = str(x)
 
-        for i in range(len(x)//2):
-            x[i],x[len(x)-i-1] = x[len(x)-i-1],x[i]
-
-        x = int("".join(x)) * s
+        x = int(x[::-1]) * s
 
         if not -2147483648 <= x <= 2147483647:
             return 0
@@ -18,7 +15,7 @@ class Solution:
         return x
 
 sol = Solution()
-print(sol.reverse(120))
+print(sol.reverse(-123))
 
 
 
