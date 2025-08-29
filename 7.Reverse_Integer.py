@@ -1,13 +1,9 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        s = 1
         if x < 0:
-            x = x*-1
-            s = -1
-        
-        x = str(x)
-
-        x = int(x[::-1]) * s
+            x = -int(str(-x)[::-1])
+        else:
+            x = int(str(x)[::-1])
 
         if not -2147483648 <= x <= 2147483647:
             return 0
