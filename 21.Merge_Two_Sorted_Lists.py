@@ -22,7 +22,6 @@ class ListNode:
     
     @staticmethod
     def print_linked_list(head):
-        values = []
         while head:
             print (str(head.val),end=",")
             head = head.next
