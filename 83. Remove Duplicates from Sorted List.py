@@ -43,15 +43,6 @@ class Solution:
                 
             current = current.next
 
-        # while current:
-        #     if current.next:
-        #         if current.val < current.next.val:
-        #             # print (current.val)
-        #             current.next = current.next.next
-        #     current = current.next
-
-
-
         return head
 
 ln = ListNode()
